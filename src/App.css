@@ -1,0 +1,283 @@
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 10vh auto 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #3E3E3E; /* Light gray background, adjust as needed */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-bar p {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1280px; /* Match this with #root max-width */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.creator-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto 0;
+}
+
+.creator-page-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin: auto;
+}
+
+
+
+
+.creator-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease;
+}
+.creator-card:hover {
+  box-shadow: 0 5px 30px rgba(247, 247, 247, 0.1);
+  /* box-shadow: 0 0 20px rgba(0,0,0);  */
+}
+
+.creator-card header {
+  padding: 1rem;
+}
+
+.creator-card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.creator-card footer{
+  margin-top: auto;
+}
+
+.card-content {
+  padding: 0 1rem 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+
+.card-description.expanded {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+
+
+.img-block {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; 
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-block img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.edit-button {
+  padding: 5px 20px;
+}
+
+form{
+  padding: 0px 15vw;
+}
+
+.visit-link{
+  font-size: 0.8rem;
+}
+
+.add-creator-btn{
+  font-size: 0.9rem;
+  padding: 7px 20px;
+  margin-right: 20px;
+}
+
+.creator-page-img {
+  width: 400px;  /* Set a fixed width */
+  height: 400px; /* Set a fixed height - make it equal to width for a perfect circle */
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /* This ensures the image doesn't spill out of the container */
+  border-radius: 50%; /* This creates the circular shape */
+  box-shadow: 0 0 20px rgba(0,0,0,0.3); /* Moved the box-shadow here for better effect */
+}
+
+.creator-page-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* .creator-page-img{
+  width: 70%;   
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.creator-page-img img {
+  object-fit: cover;
+  object-position: center;   
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,0,0);
+} */
+
+.content-block{
+  margin: 30px 0px;
+  text-align: left;
+}
+
+.content-block h1{
+  font-size: 2.5rem;
+}
+
+.content-block .visit-link{
+  font-size: 0.8rem;
+}
+
+.creator-page-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.creator-page-description.expanded {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: #b19cd9;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.8em;
+}
+
+.delete-btn{
+  background-color:#bb2124;
+  border: 0;    
+  
+}
+
+.delete-btn:hover{
+  background-color:#d42729;
+  border: 0;    
+  
+}
+
+.creator-page-grid .delete-btn {
+  padding: 6px 20px;  
+  text-align: left;
+}
+
+.creator-page-actions {
+  display: flex;
+  gap: 30px; /* This adds space between the buttons */
+}
+
+.toast
+{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  z-index: 50;
+  background-color: #dc2626; 
+  color: white;
+  padding: 16px; 
+  font-size: 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0);
+}
+
+@media (max-width: 992px) {
+  .creator-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .creator-page-grid {
+    grid-template-columns: 1fr;
+  }
+  .content-block{
+    padding: 0 15vw;
+  }
+  .creator-page-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* This adds space between the buttons */
+  }
+}
+
+@media (max-width: 576px) {
+  .creator-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .creator-page-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .content-block{
+    padding: 0 15vw;
+    text-align: center;
+  }
+
+  .creator-page-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* This adds space between the buttons */
+  }
+}
+
