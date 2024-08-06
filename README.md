@@ -1,10 +1,10 @@
-# WEB103 Prework - *👉🏿 Name of App Here*
+# WEB103 Prework - CreatorVerse
 
 Submitted by: Parth Kansara
 
-About this web app: **👉🏿 app description here**
+About this web app: **This app lets you showcase your favorite content creators. You can create, update, and delete the information of your content creators seamlessly.**
 
-Time spent: **👉🏿 X** hours
+Time spent: About **16** hours
 
 ## Required Features
 
@@ -40,7 +40,7 @@ Here's a walkthrough of implemented required features:
 👉🏿<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with [LiceCap]()
+GIF created with [ShareX](https://getsharex.com/)
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -48,7 +48,7 @@ GIF created with [LiceCap]()
 
 ## Notes
 
-    Describe any challenges encountered while building the app or any additional context you'd like to add.
+Describe any challenges encountered while building the app or any additional context you'd like to add.
 
 ## License
 
