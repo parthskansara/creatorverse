@@ -49,6 +49,7 @@ GIF created with [ShareX](https://getsharex.com/)
 ## Notes
 
 **Describe any challenges encountered while building the app or any additional context you'd like to add.**
+
 As this was my first time using PicoCSS as well as Supabase, I had to go through the documentation to understand their workings.
 ## License
 
